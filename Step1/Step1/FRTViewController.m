@@ -1,4 +1,5 @@
 #import "FRTViewController.h"
+#import "FRTRefreshControl.h"
 
 @implementation FRTViewController
 
@@ -14,6 +15,16 @@
         self.strings = [NSArray arrayWithArray:strings];
     }
     return self;
+}
+
+#pragma mark - UIViewController events
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    FRTRefreshControl *refreshControl = [[FRTRefreshControl alloc] init];
+    [self.tableView addSubview:refreshControl];
 }
 
 #pragma mark - UITableViewDataSource

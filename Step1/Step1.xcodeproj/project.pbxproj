@@ -17,6 +17,7 @@
 		7F4648EA174BAF6800FBEA1C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4648E9174BAF6800FBEA1C /* Default@2x.png */; };
 		7F4648EC174BAF6800FBEA1C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4648EB174BAF6800FBEA1C /* Default-568h@2x.png */; };
 		7F4648F4174BAFA500FBEA1C /* FRTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4648F3174BAFA500FBEA1C /* FRTViewController.m */; };
+		7F4648F7174BB03600FBEA1C /* FRTRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4648F6174BB03600FBEA1C /* FRTRefreshControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		7F4648EB174BAF6800FBEA1C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7F4648F2174BAFA500FBEA1C /* FRTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRTViewController.h; sourceTree = "<group>"; };
 		7F4648F3174BAFA500FBEA1C /* FRTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRTViewController.m; sourceTree = "<group>"; };
+		7F4648F5174BB03600FBEA1C /* FRTRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRTRefreshControl.h; sourceTree = "<group>"; };
+		7F4648F6174BB03600FBEA1C /* FRTRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRTRefreshControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				7F4648E5174BAF6800FBEA1C /* FRTAppDelegate.m */,
 				7F4648F2174BAFA500FBEA1C /* FRTViewController.h */,
 				7F4648F3174BAFA500FBEA1C /* FRTViewController.m */,
+				7F4648F5174BB03600FBEA1C /* FRTRefreshControl.h */,
+				7F4648F6174BB03600FBEA1C /* FRTRefreshControl.m */,
 				7F4648DC174BAF6800FBEA1C /* Supporting Files */,
 			);
 			path = Step1;
@@ -173,6 +178,7 @@
 				7F4648E2174BAF6800FBEA1C /* main.m in Sources */,
 				7F4648E6174BAF6800FBEA1C /* FRTAppDelegate.m in Sources */,
 				7F4648F4174BAFA500FBEA1C /* FRTViewController.m in Sources */,
+				7F4648F7174BB03600FBEA1C /* FRTRefreshControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
