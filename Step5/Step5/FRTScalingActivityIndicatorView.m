@@ -38,6 +38,9 @@
 
 - (void)stopAnimating
 {
+    if (self.superview == nil) {
+        return;
+    }
     [UIView animateWithDuration:.225
                      animations:^{
                          CGAffineTransform rotation = CGAffineTransformMakeRotation(M_PI_2);

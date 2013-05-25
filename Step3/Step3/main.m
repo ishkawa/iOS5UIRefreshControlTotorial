@@ -1,6 +1,6 @@
 //
 //  main.m
-//  Step3
+//  Step4
 //
 //  Created by Yosuke Ishikawa on 2013/05/22.
 //  Copyright (c) 2013年 Yosuke Ishikawa. All rights reserved.

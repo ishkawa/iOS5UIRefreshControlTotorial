@@ -24,6 +24,13 @@ static const char FRTRefreshControlKey;
     
     if (self.refreshControl) {
         [self.view addSubview:self.refreshControl];
+    } else {
+        for (UIView *subview in self.view.subviews) {
+            if ([subview isKindOfClass:[FRTRefreshControl class]]) {
+                self.refreshControl = (UIRefreshControl *)subview;
+                break;
+            }
+        }
     }
 }
 

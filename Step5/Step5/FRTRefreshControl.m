@@ -2,7 +2,7 @@
 #import "FRTGumView.h"
 #import "FRTScalingActivityIndicatorView.h"
 #import "FRTMethodSwizzling.h"
-#import <QuartzCore/QuartzCore.h>
+#import <objc/runtime.h>
 
 static CGFloat const FRTRefreshControlHeight = 45.f;
 static CGFloat const FRTRefreshControlThreshold = -110.f;
@@ -28,6 +28,8 @@ typedef NS_ENUM(NSInteger, FRTRefreshControlState) {
     @autoreleasepool {
         if ([[[UIDevice currentDevice] systemVersion] floatValue] > 6.0) {
             FRTSwizzleClassMethod([self class], @selector(alloc), @selector(_alloc));
+        } else {
+            objc_registerClassPair(objc_allocateClassPair([self class], "UIRefreshControl", 0));
         }
     }
 }
@@ -41,13 +43,27 @@ typedef NS_ENUM(NSInteger, FRTRefreshControlState) {
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.gumView = [[FRTGumView alloc] init];
-        [self addSubview:self.gumView];
-        
-        self.indicatorView = [[FRTScalingActivityIndicatorView alloc] init];
-        [self addSubview:self.indicatorView];
+        [self initialize];
     }
     return self;
+}
+
+- (id)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if(self) {
+        [self initialize];
+    }
+    return self;
+}
+
+- (void)initialize
+{
+    self.gumView = [[FRTGumView alloc] init];
+    [self addSubview:self.gumView];
+    
+    self.indicatorView = [[FRTScalingActivityIndicatorView alloc] init];
+    [self addSubview:self.indicatorView];
 }
 
 #pragma mark - accessors

@@ -7,109 +7,118 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F7E031B174BC65100E5A427 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7E031A174BC65100E5A427 /* UIKit.framework */; };
-		7F7E031D174BC65100E5A427 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7E031C174BC65100E5A427 /* Foundation.framework */; };
-		7F7E031F174BC65100E5A427 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7E031E174BC65100E5A427 /* CoreGraphics.framework */; };
-		7F7E0325174BC65100E5A427 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E0323174BC65100E5A427 /* InfoPlist.strings */; };
-		7F7E0327174BC65100E5A427 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E0326174BC65100E5A427 /* main.m */; };
-		7F7E032B174BC65100E5A427 /* FRTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E032A174BC65100E5A427 /* FRTAppDelegate.m */; };
-		7F7E032D174BC65100E5A427 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E032C174BC65100E5A427 /* Default.png */; };
-		7F7E032F174BC65100E5A427 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E032E174BC65100E5A427 /* Default@2x.png */; };
-		7F7E0331174BC65100E5A427 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F7E0330174BC65100E5A427 /* Default-568h@2x.png */; };
-		7F7E033B174BC68200E5A427 /* FRTRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E0338174BC68200E5A427 /* FRTRefreshControl.m */; };
-		7F7E033C174BC68200E5A427 /* FRTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E033A174BC68200E5A427 /* FRTViewController.m */; };
-		7F7E0342174BC95E00E5A427 /* FRTGumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E0341174BC95E00E5A427 /* FRTGumView.m */; };
+		7FB07D44174BD5C100C0AF92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB07D43174BD5C100C0AF92 /* UIKit.framework */; };
+		7FB07D46174BD5C100C0AF92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB07D45174BD5C100C0AF92 /* Foundation.framework */; };
+		7FB07D48174BD5C100C0AF92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB07D47174BD5C100C0AF92 /* CoreGraphics.framework */; };
+		7FB07E8917504D5800C0AF92 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FB07E8117504D5800C0AF92 /* Default-568h@2x.png */; };
+		7FB07E8A17504D5800C0AF92 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FB07E8217504D5800C0AF92 /* Default.png */; };
+		7FB07E8B17504D5800C0AF92 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FB07E8317504D5800C0AF92 /* Default@2x.png */; };
+		7FB07E8C17504D5800C0AF92 /* FRTRefresgControlIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FB07E8417504D5800C0AF92 /* FRTRefresgControlIcon.png */; };
+		7FB07E8D17504D5800C0AF92 /* FRTRefresgControlIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FB07E8517504D5800C0AF92 /* FRTRefresgControlIcon@2x.png */; };
+		7FB07E8E17504D5800C0AF92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB07E8617504D5800C0AF92 /* main.m */; };
+		7FB07E9A17504D9B00C0AF92 /* FRTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB07E9117504D9B00C0AF92 /* FRTAppDelegate.m */; };
+		7FB07E9B17504D9B00C0AF92 /* FRTGumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB07E9317504D9B00C0AF92 /* FRTGumView.m */; };
+		7FB07E9C17504D9B00C0AF92 /* FRTRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB07E9517504D9B00C0AF92 /* FRTRefreshControl.m */; };
+		7FB07E9D17504D9B00C0AF92 /* FRTScalingActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB07E9717504D9B00C0AF92 /* FRTScalingActivityIndicatorView.m */; };
+		7FB07E9E17504D9B00C0AF92 /* FRTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB07E9917504D9B00C0AF92 /* FRTViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7F7E0317174BC65100E5A427 /* Step3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Step3.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F7E031A174BC65100E5A427 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		7F7E031C174BC65100E5A427 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7F7E031E174BC65100E5A427 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7F7E0322174BC65100E5A427 /* Step3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Step3-Info.plist"; sourceTree = "<group>"; };
-		7F7E0324174BC65100E5A427 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7F7E0326174BC65100E5A427 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7F7E0328174BC65100E5A427 /* Step3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Step3-Prefix.pch"; sourceTree = "<group>"; };
-		7F7E0329174BC65100E5A427 /* FRTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRTAppDelegate.h; sourceTree = "<group>"; };
-		7F7E032A174BC65100E5A427 /* FRTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRTAppDelegate.m; sourceTree = "<group>"; };
-		7F7E032C174BC65100E5A427 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		7F7E032E174BC65100E5A427 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		7F7E0330174BC65100E5A427 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		7F7E0337174BC68200E5A427 /* FRTRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRTRefreshControl.h; sourceTree = "<group>"; };
-		7F7E0338174BC68200E5A427 /* FRTRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRTRefreshControl.m; sourceTree = "<group>"; };
-		7F7E0339174BC68200E5A427 /* FRTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRTViewController.h; sourceTree = "<group>"; };
-		7F7E033A174BC68200E5A427 /* FRTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRTViewController.m; sourceTree = "<group>"; };
-		7F7E0340174BC95E00E5A427 /* FRTGumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRTGumView.h; sourceTree = "<group>"; };
-		7F7E0341174BC95E00E5A427 /* FRTGumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRTGumView.m; sourceTree = "<group>"; };
+		7FB07D40174BD5C100C0AF92 /* Step3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Step3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB07D43174BD5C100C0AF92 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7FB07D45174BD5C100C0AF92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7FB07D47174BD5C100C0AF92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7FB07E8117504D5800C0AF92 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Step3/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		7FB07E8217504D5800C0AF92 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Step3/Default.png; sourceTree = SOURCE_ROOT; };
+		7FB07E8317504D5800C0AF92 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Step3/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		7FB07E8417504D5800C0AF92 /* FRTRefresgControlIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FRTRefresgControlIcon.png; path = Step3/FRTRefresgControlIcon.png; sourceTree = SOURCE_ROOT; };
+		7FB07E8517504D5800C0AF92 /* FRTRefresgControlIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FRTRefresgControlIcon@2x.png"; path = "Step3/FRTRefresgControlIcon@2x.png"; sourceTree = SOURCE_ROOT; };
+		7FB07E8617504D5800C0AF92 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Step3/main.m; sourceTree = SOURCE_ROOT; };
+		7FB07E8717504D5800C0AF92 /* Step3-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Step3-Info.plist"; path = "Step3/Step3-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7FB07E8817504D5800C0AF92 /* Step3-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Step3-Prefix.pch"; path = "Step3/Step3-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		7FB07E9017504D9B00C0AF92 /* FRTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRTAppDelegate.h; path = Step3/FRTAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		7FB07E9117504D9B00C0AF92 /* FRTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRTAppDelegate.m; path = Step3/FRTAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		7FB07E9217504D9B00C0AF92 /* FRTGumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRTGumView.h; path = Step3/FRTGumView.h; sourceTree = SOURCE_ROOT; };
+		7FB07E9317504D9B00C0AF92 /* FRTGumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRTGumView.m; path = Step3/FRTGumView.m; sourceTree = SOURCE_ROOT; };
+		7FB07E9417504D9B00C0AF92 /* FRTRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRTRefreshControl.h; path = Step3/FRTRefreshControl.h; sourceTree = SOURCE_ROOT; };
+		7FB07E9517504D9B00C0AF92 /* FRTRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRTRefreshControl.m; path = Step3/FRTRefreshControl.m; sourceTree = SOURCE_ROOT; };
+		7FB07E9617504D9B00C0AF92 /* FRTScalingActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRTScalingActivityIndicatorView.h; path = Step3/FRTScalingActivityIndicatorView.h; sourceTree = SOURCE_ROOT; };
+		7FB07E9717504D9B00C0AF92 /* FRTScalingActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRTScalingActivityIndicatorView.m; path = Step3/FRTScalingActivityIndicatorView.m; sourceTree = SOURCE_ROOT; };
+		7FB07E9817504D9B00C0AF92 /* FRTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRTViewController.h; path = Step3/FRTViewController.h; sourceTree = SOURCE_ROOT; };
+		7FB07E9917504D9B00C0AF92 /* FRTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRTViewController.m; path = Step3/FRTViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7F7E0314174BC65100E5A427 /* Frameworks */ = {
+		7FB07D3D174BD5C100C0AF92 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F7E031B174BC65100E5A427 /* UIKit.framework in Frameworks */,
-				7F7E031D174BC65100E5A427 /* Foundation.framework in Frameworks */,
-				7F7E031F174BC65100E5A427 /* CoreGraphics.framework in Frameworks */,
+				7FB07D44174BD5C100C0AF92 /* UIKit.framework in Frameworks */,
+				7FB07D46174BD5C100C0AF92 /* Foundation.framework in Frameworks */,
+				7FB07D48174BD5C100C0AF92 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7F7E030E174BC65100E5A427 = {
+		7FB07D37174BD5C100C0AF92 = {
 			isa = PBXGroup;
 			children = (
-				7F7E0320174BC65100E5A427 /* Step3 */,
-				7F7E0319174BC65100E5A427 /* Frameworks */,
-				7F7E0318174BC65100E5A427 /* Products */,
+				7FB07D49174BD5C100C0AF92 /* Step3 */,
+				7FB07D42174BD5C100C0AF92 /* Frameworks */,
+				7FB07D41174BD5C100C0AF92 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7F7E0318174BC65100E5A427 /* Products */ = {
+		7FB07D41174BD5C100C0AF92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F7E0317174BC65100E5A427 /* Step3.app */,
+				7FB07D40174BD5C100C0AF92 /* Step3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7F7E0319174BC65100E5A427 /* Frameworks */ = {
+		7FB07D42174BD5C100C0AF92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7F7E031A174BC65100E5A427 /* UIKit.framework */,
-				7F7E031C174BC65100E5A427 /* Foundation.framework */,
-				7F7E031E174BC65100E5A427 /* CoreGraphics.framework */,
+				7FB07D43174BD5C100C0AF92 /* UIKit.framework */,
+				7FB07D45174BD5C100C0AF92 /* Foundation.framework */,
+				7FB07D47174BD5C100C0AF92 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7F7E0320174BC65100E5A427 /* Step3 */ = {
+		7FB07D49174BD5C100C0AF92 /* Step3 */ = {
 			isa = PBXGroup;
 			children = (
-				7F7E0329174BC65100E5A427 /* FRTAppDelegate.h */,
-				7F7E032A174BC65100E5A427 /* FRTAppDelegate.m */,
-				7F7E0339174BC68200E5A427 /* FRTViewController.h */,
-				7F7E033A174BC68200E5A427 /* FRTViewController.m */,
-				7F7E0337174BC68200E5A427 /* FRTRefreshControl.h */,
-				7F7E0338174BC68200E5A427 /* FRTRefreshControl.m */,
-				7F7E0340174BC95E00E5A427 /* FRTGumView.h */,
-				7F7E0341174BC95E00E5A427 /* FRTGumView.m */,
-				7F7E0321174BC65100E5A427 /* Supporting Files */,
+				7FB07E9017504D9B00C0AF92 /* FRTAppDelegate.h */,
+				7FB07E9117504D9B00C0AF92 /* FRTAppDelegate.m */,
+				7FB07E9817504D9B00C0AF92 /* FRTViewController.h */,
+				7FB07E9917504D9B00C0AF92 /* FRTViewController.m */,
+				7FB07E9417504D9B00C0AF92 /* FRTRefreshControl.h */,
+				7FB07E9517504D9B00C0AF92 /* FRTRefreshControl.m */,
+				7FB07E9217504D9B00C0AF92 /* FRTGumView.h */,
+				7FB07E9317504D9B00C0AF92 /* FRTGumView.m */,
+				7FB07E9617504D9B00C0AF92 /* FRTScalingActivityIndicatorView.h */,
+				7FB07E9717504D9B00C0AF92 /* FRTScalingActivityIndicatorView.m */,
+				7FB07D4A174BD5C100C0AF92 /* Supporting Files */,
 			);
-			path = Step3;
+			name = Step3;
+			path = Step4;
 			sourceTree = "<group>";
 		};
-		7F7E0321174BC65100E5A427 /* Supporting Files */ = {
+		7FB07D4A174BD5C100C0AF92 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7F7E0322174BC65100E5A427 /* Step3-Info.plist */,
-				7F7E0323174BC65100E5A427 /* InfoPlist.strings */,
-				7F7E0326174BC65100E5A427 /* main.m */,
-				7F7E0328174BC65100E5A427 /* Step3-Prefix.pch */,
-				7F7E032C174BC65100E5A427 /* Default.png */,
-				7F7E032E174BC65100E5A427 /* Default@2x.png */,
-				7F7E0330174BC65100E5A427 /* Default-568h@2x.png */,
+				7FB07E8617504D5800C0AF92 /* main.m */,
+				7FB07E8717504D5800C0AF92 /* Step3-Info.plist */,
+				7FB07E8817504D5800C0AF92 /* Step3-Prefix.pch */,
+				7FB07E8117504D5800C0AF92 /* Default-568h@2x.png */,
+				7FB07E8217504D5800C0AF92 /* Default.png */,
+				7FB07E8317504D5800C0AF92 /* Default@2x.png */,
+				7FB07E8417504D5800C0AF92 /* FRTRefresgControlIcon.png */,
+				7FB07E8517504D5800C0AF92 /* FRTRefresgControlIcon@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,92 +126,83 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7F7E0316174BC65100E5A427 /* Step3 */ = {
+		7FB07D3F174BD5C100C0AF92 /* Step3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F7E0334174BC65100E5A427 /* Build configuration list for PBXNativeTarget "Step3" */;
+			buildConfigurationList = 7FB07D5D174BD5C100C0AF92 /* Build configuration list for PBXNativeTarget "Step3" */;
 			buildPhases = (
-				7F7E0313174BC65100E5A427 /* Sources */,
-				7F7E0314174BC65100E5A427 /* Frameworks */,
-				7F7E0315174BC65100E5A427 /* Resources */,
+				7FB07D3C174BD5C100C0AF92 /* Sources */,
+				7FB07D3D174BD5C100C0AF92 /* Frameworks */,
+				7FB07D3E174BD5C100C0AF92 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Step3;
-			productName = Step3;
-			productReference = 7F7E0317174BC65100E5A427 /* Step3.app */;
+			productName = Step4;
+			productReference = 7FB07D40174BD5C100C0AF92 /* Step3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7F7E030F174BC65100E5A427 /* Project object */ = {
+		7FB07D38174BD5C100C0AF92 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = FRT;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Yosuke Ishikawa";
 			};
-			buildConfigurationList = 7F7E0312174BC65100E5A427 /* Build configuration list for PBXProject "Step3" */;
+			buildConfigurationList = 7FB07D3B174BD5C100C0AF92 /* Build configuration list for PBXProject "Step3" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7F7E030E174BC65100E5A427;
-			productRefGroup = 7F7E0318174BC65100E5A427 /* Products */;
+			mainGroup = 7FB07D37174BD5C100C0AF92;
+			productRefGroup = 7FB07D41174BD5C100C0AF92 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F7E0316174BC65100E5A427 /* Step3 */,
+				7FB07D3F174BD5C100C0AF92 /* Step3 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7F7E0315174BC65100E5A427 /* Resources */ = {
+		7FB07D3E174BD5C100C0AF92 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F7E0325174BC65100E5A427 /* InfoPlist.strings in Resources */,
-				7F7E032D174BC65100E5A427 /* Default.png in Resources */,
-				7F7E032F174BC65100E5A427 /* Default@2x.png in Resources */,
-				7F7E0331174BC65100E5A427 /* Default-568h@2x.png in Resources */,
+				7FB07E8917504D5800C0AF92 /* Default-568h@2x.png in Resources */,
+				7FB07E8A17504D5800C0AF92 /* Default.png in Resources */,
+				7FB07E8B17504D5800C0AF92 /* Default@2x.png in Resources */,
+				7FB07E8C17504D5800C0AF92 /* FRTRefresgControlIcon.png in Resources */,
+				7FB07E8D17504D5800C0AF92 /* FRTRefresgControlIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7F7E0313174BC65100E5A427 /* Sources */ = {
+		7FB07D3C174BD5C100C0AF92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F7E0327174BC65100E5A427 /* main.m in Sources */,
-				7F7E032B174BC65100E5A427 /* FRTAppDelegate.m in Sources */,
-				7F7E033B174BC68200E5A427 /* FRTRefreshControl.m in Sources */,
-				7F7E033C174BC68200E5A427 /* FRTViewController.m in Sources */,
-				7F7E0342174BC95E00E5A427 /* FRTGumView.m in Sources */,
+				7FB07E8E17504D5800C0AF92 /* main.m in Sources */,
+				7FB07E9A17504D9B00C0AF92 /* FRTAppDelegate.m in Sources */,
+				7FB07E9B17504D9B00C0AF92 /* FRTGumView.m in Sources */,
+				7FB07E9C17504D9B00C0AF92 /* FRTRefreshControl.m in Sources */,
+				7FB07E9D17504D9B00C0AF92 /* FRTScalingActivityIndicatorView.m in Sources */,
+				7FB07E9E17504D9B00C0AF92 /* FRTViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		7F7E0323174BC65100E5A427 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7F7E0324174BC65100E5A427 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		7F7E0332174BC65100E5A427 /* Debug */ = {
+		7FB07D5B174BD5C100C0AF92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -233,7 +233,7 @@
 			};
 			name = Debug;
 		};
-		7F7E0333174BC65100E5A427 /* Release */ = {
+		7FB07D5C174BD5C100C0AF92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -258,24 +258,26 @@
 			};
 			name = Release;
 		};
-		7F7E0335174BC65100E5A427 /* Debug */ = {
+		7FB07D5E174BD5C100C0AF92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Step3/Step3-Prefix.pch";
-				INFOPLIST_FILE = "Step3/Step3-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "$(SRCROOT)/Step3/Step3-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = Step3;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		7F7E0336174BC65100E5A427 /* Release */ = {
+		7FB07D5F174BD5C100C0AF92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Step3/Step3-Prefix.pch";
-				INFOPLIST_FILE = "Step3/Step3-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "$(SRCROOT)/Step3/Step3-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = Step3;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -283,25 +285,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7F7E0312174BC65100E5A427 /* Build configuration list for PBXProject "Step3" */ = {
+		7FB07D3B174BD5C100C0AF92 /* Build configuration list for PBXProject "Step3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7F7E0332174BC65100E5A427 /* Debug */,
-				7F7E0333174BC65100E5A427 /* Release */,
+				7FB07D5B174BD5C100C0AF92 /* Debug */,
+				7FB07D5C174BD5C100C0AF92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F7E0334174BC65100E5A427 /* Build configuration list for PBXNativeTarget "Step3" */ = {
+		7FB07D5D174BD5C100C0AF92 /* Build configuration list for PBXNativeTarget "Step3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7F7E0335174BC65100E5A427 /* Debug */,
-				7F7E0336174BC65100E5A427 /* Release */,
+				7FB07D5E174BD5C100C0AF92 /* Debug */,
+				7FB07D5F174BD5C100C0AF92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7F7E030F174BC65100E5A427 /* Project object */;
+	rootObject = 7FB07D38174BD5C100C0AF92 /* Project object */;
 }

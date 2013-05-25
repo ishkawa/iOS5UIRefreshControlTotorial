@@ -1,5 +1,6 @@
 #import "FRTRefreshControl.h"
 #import "FRTGumView.h"
+#import "FRTScalingActivityIndicatorView.h"
 #import <QuartzCore/QuartzCore.h>
 
 static CGFloat const FRTRefreshControlHeight = 45.f;
@@ -14,7 +15,7 @@ typedef NS_ENUM(NSInteger, FRTRefreshControlState) {
 @interface FRTRefreshControl ()
 
 @property (nonatomic) FRTRefreshControlState refreshControlState;
-@property (nonatomic, strong) UIActivityIndicatorView *indicatorView;
+@property (nonatomic, strong) FRTScalingActivityIndicatorView *indicatorView;
 @property (nonatomic, strong) FRTGumView *gumView;
 
 @end
@@ -28,10 +29,7 @@ typedef NS_ENUM(NSInteger, FRTRefreshControlState) {
         self.gumView = [[FRTGumView alloc] init];
         [self addSubview:self.gumView];
         
-        self.indicatorView = [[UIActivityIndicatorView alloc] init];
-        self.indicatorView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
-        self.indicatorView.color = [UIColor lightGrayColor];
-        [self.indicatorView.layer setValue:@.7f forKeyPath:@"transform.scale"];
+        self.indicatorView = [[FRTScalingActivityIndicatorView alloc] init];
         [self addSubview:self.indicatorView];
     }
     return self;
@@ -167,6 +165,7 @@ typedef NS_ENUM(NSInteger, FRTRefreshControlState) {
     UIEdgeInsets inset = scrollView.contentInset;
     inset.top -= FRTRefreshControlHeight;
     
+    [self.indicatorView stopAnimating];
     [UIView animateWithDuration:.3f
                      animations:^{
                          scrollView.contentInset = inset;
@@ -177,7 +176,6 @@ typedef NS_ENUM(NSInteger, FRTRefreshControlState) {
                          } else {
                              [self resetRefreshControlState];
                          }
-                         [self.indicatorView stopAnimating];
                      }];
 }
 

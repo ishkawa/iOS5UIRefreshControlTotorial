@@ -7,7 +7,7 @@
     self = [super initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     if (self) {
         self.color = [UIColor colorWithRed:.607f green:.635f blue:.670f alpha:1.f];
-        self.transform = CGAffineTransformMakeScale(0.01f, 0.01f);
+        self.transform = CGAffineTransformMakeScale(0.f, 0.f);
     }
     return self;
 }

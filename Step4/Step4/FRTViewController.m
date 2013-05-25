@@ -23,12 +23,10 @@
 {
     [super viewDidLoad];
     
-    self.iOS5RefreshControl = [[FRTRefreshControl alloc] init];
-    [self.iOS5RefreshControl addTarget:self
-                       action:@selector(refresh)
-             forControlEvents:UIControlEventValueChanged];
-    
-    [self.tableView addSubview:self.iOS5RefreshControl];
+    self.refreshControl = (UIRefreshControl *)[[FRTRefreshControl alloc] init];
+    [self.refreshControl addTarget:self
+                            action:@selector(refresh)
+                  forControlEvents:UIControlEventValueChanged];
 }
 
 #pragma mark -
@@ -38,7 +36,7 @@
     double delayInSeconds = 2.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        [self.iOS5RefreshControl endRefreshing];
+        [self.refreshControl endRefreshing];
     });
 }
 

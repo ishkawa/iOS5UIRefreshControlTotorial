@@ -7,14 +7,28 @@
 {
     self = [super init];
     if (self) {
-        NSMutableArray *strings = [NSMutableArray array];
-        for (NSInteger index = 0; index < 30; index++) {
-            NSString *string = [NSString stringWithFormat:@"cell %d", index];
-            [strings addObject:string];
-        }
-        self.strings = [NSArray arrayWithArray:strings];
+        [self initialize];
     }
     return self;
+}
+
+- (id)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        [self initialize];
+    }
+    return self;
+}
+
+- (void)initialize
+{
+    NSMutableArray *strings = [NSMutableArray array];
+    for (NSInteger index = 0; index < 30; index++) {
+        NSString *string = [NSString stringWithFormat:@"cell %d", index];
+        [strings addObject:string];
+    }
+    self.strings = [NSArray arrayWithArray:strings];
 }
 
 #pragma mark - UIViewController events
@@ -23,7 +37,6 @@
 {
     [super viewDidLoad];
     
-    self.refreshControl = (UIRefreshControl *)[[FRTRefreshControl alloc] init];
     [self.refreshControl addTarget:self
                             action:@selector(refresh)
                   forControlEvents:UIControlEventValueChanged];

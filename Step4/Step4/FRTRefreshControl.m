@@ -1,6 +1,7 @@
 #import "FRTRefreshControl.h"
 #import "FRTGumView.h"
 #import "FRTScalingActivityIndicatorView.h"
+#import "FRTMethodSwizzling.h"
 #import <QuartzCore/QuartzCore.h>
 
 static CGFloat const FRTRefreshControlHeight = 45.f;
@@ -21,6 +22,20 @@ typedef NS_ENUM(NSInteger, FRTRefreshControlState) {
 @end
 
 @implementation FRTRefreshControl
+
++ (void)load
+{
+    @autoreleasepool {
+        if ([[[UIDevice currentDevice] systemVersion] floatValue] > 6.0) {
+            FRTSwizzleClassMethod([self class], @selector(alloc), @selector(_alloc));
+        }
+    }
+}
+
++ (id)_alloc
+{
+    return (id)[UIRefreshControl alloc];
+}
 
 - (id)initWithFrame:(CGRect)frame
 {

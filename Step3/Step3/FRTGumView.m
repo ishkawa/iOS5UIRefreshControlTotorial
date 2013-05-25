@@ -29,7 +29,7 @@ static CGFloat const ISSubCircleMinRadius  = 2.f;
         self.imageView = [[UIImageView alloc] init];
         self.imageView.frame = CGRectMake(0, 0, self.mainRadius*2-12, self.mainRadius*2-12);
         self.imageView.center = CGPointMake(frame.size.width/2.f, self.mainRadius);
-        self.imageView.image = [UIImage imageNamed:@"ISRefresgControlIcon"];
+        self.imageView.image = [UIImage imageNamed:@"FRTRefresgControlIcon"];
         [self addSubview:self.imageView];
         
         [self addObserver:self forKeyPath:@"distance" options:0 context:NULL];
@@ -126,7 +126,7 @@ static CGFloat const ISSubCircleMinRadius  = 2.f;
     
     NSInteger count = 10;
     CGFloat delta = self.distance/(CGFloat)count;
-    NSTimeInterval duration = .125;
+    NSTimeInterval duration = .12;
     NSTimeInterval interval = duration/(NSTimeInterval)count;
     [self shrinkWithDelta:delta interval:interval count:count];
 }
