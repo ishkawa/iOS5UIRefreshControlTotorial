@@ -7,7 +7,7 @@
     self = [super initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     if (self) {
         self.color = [UIColor colorWithRed:.607f green:.635f blue:.670f alpha:1.f];
-        self.transform = CGAffineTransformMakeScale(0.f, 0.f);
+        self.transform = CGAffineTransformMakeScale(0.01f, 0.01f);
     }
     return self;
 }
@@ -20,7 +20,7 @@
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * 0.1 * NSEC_PER_SEC);
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         CGAffineTransform rotation = CGAffineTransformMakeRotation(-M_PI_2);
-        CGAffineTransform scale = CGAffineTransformMakeScale(0.f, 0.f);
+        CGAffineTransform scale = CGAffineTransformMakeScale(0.01f, 0.01f);
         self.transform = CGAffineTransformConcat(rotation, scale);
         
         [UIView animateWithDuration:.2

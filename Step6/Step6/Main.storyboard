@@ -28,7 +28,7 @@
                             <outlet property="delegate" destination="DEw-0m-feV" id="Q7R-RJ-wQA"/>
                         </connections>
                     </tableView>
-                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="8Wa-l1-Eh4">
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="X2D-gQ-Hnl">
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
                 </tableViewController>
